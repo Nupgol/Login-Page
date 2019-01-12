@@ -1,0 +1,12 @@
+<?php
+session_start();
+if($_SESSION["user"]==true)
+{
+echo "Welcome"." ".$_SESSION["user"]."<br/>"."<br/>";
+}
+else
+{
+header("location:login.php");
+}
+?>
+<a href="destroy.php">LogOut</a>
